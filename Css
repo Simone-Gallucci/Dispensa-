@@ -1,0 +1,88 @@
+Dispensa CSS: Guida Completa
+
+
+---
+
+Cos’è il CSS?
+
+CSS (Cascading Style Sheets) è il linguaggio per definire lo stile e il layout delle pagine web.
+
+
+---
+
+Struttura di un file CSS
+
+Un file CSS è formato da selettori e regole.
+Esempio:
+
+selettore {
+    proprietà: valore;
+}
+
+
+---
+
+Selettori CSS
+
+Tag (h1):
+
+h1 {
+    color: blue;
+}
+
+Classe (.classe):
+
+.testo {
+    font-size: 16px;
+}
+
+ID (#id):
+
+#intestazione {
+    background-color: gray;
+}
+
+Pseudo-classi (:hover):
+
+button:hover {
+    background-color: lightblue;
+}
+
+
+
+---
+
+Proprietà CSS principali
+
+1. Colore e sfondo:
+
+color, background-color, background-image.
+
+
+Esempio:
+
+body {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+
+2. Testo e font:
+
+font-family, font-size, text-align, text-decoration.
+
+
+
+3. Layout:
+
+display, position, flexbox, grid.
+
+
+Esempio con Flexbox:
+
+.contenitore {
+    display: flex;
+    justify-content: center;
+}
+
+
