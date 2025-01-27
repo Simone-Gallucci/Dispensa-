@@ -1,0 +1,61 @@
+Dispensa JavaScript: Guida Completa
+
+
+---
+
+Cos’è il JavaScript?
+
+JavaScript è un linguaggio di scripting utilizzato per rendere le pagine web dinamiche e interattive.
+
+
+---
+
+Struttura base
+
+let nome = "Mario";
+
+function saluta() {
+    alert("Ciao " + nome + "!");
+}
+
+saluta();
+
+
+---
+
+Manipolazione del DOM
+
+Selezionare elementi:
+
+const titolo = document.getElementById("titolo");
+
+Modificare contenuti:
+
+titolo.textContent = "Nuovo Titolo";
+
+Eventi:
+
+const btn = document.querySelector("button");
+btn.addEventListener("click", function() {
+    alert("Hai cliccato!");
+});
+
+
+
+---
+
+Funzioni e strutture
+
+Condizioni:
+
+if (nome === "Mario") {
+    console.log("Benvenuto Mario!");
+}
+
+Cicli:
+
+for (let i = 0; i < 5; i++) {
+    console.log(i);
+}
+
+
