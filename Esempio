@@ -1,0 +1,207 @@
+Esempio Completo HTML + CSS + JavaScript
+Il codice finale rappresenta un esempio completo di integrazione tra HTML, CSS e JavaScript, in cui ogni linguaggio svolge un ruolo specifico per creare una pagina web interattiva e ben formattata.
+
+Ecco una spiegazione dettagliata:
+
+
+---
+
+HTML (Struttura del documento)
+
+L’HTML fornisce la struttura della pagina e include:
+
+1. Elementi visibili come il titolo della pagina, il modulo per inserire il nome e il pulsante.
+
+
+2. Attributi specifici che permettono di interagire con JavaScript e CSS (es. id, for).
+
+
+
+Sezioni principali del codice HTML:
+
+1. <head>:
+
+Contiene le informazioni sulla pagina, come il titolo (<title>).
+
+Include il codice CSS interno (<style>) per definire lo stile della pagina.
+
+
+
+2. <body>:
+
+<header>: Visualizza un titolo principale con un messaggio di benvenuto.
+
+<h1 id="titolo">Benvenuto</h1>
+
+<main>: Contiene un modulo HTML con:
+
+Un campo di testo (<input>) per inserire il nome.
+
+Un pulsante (<button>) che attiva un'azione JavaScript quando viene cliccato.
+
+
+
+
+
+
+---
+
+CSS (Stile della pagina)
+
+Il CSS migliora l'aspetto visivo della pagina, rendendola gradevole e organizzata.
+
+Cosa fa il CSS:
+
+1. Corpo della pagina (body):
+
+Applica un font (Arial).
+
+Imposta uno sfondo grigio chiaro.
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+
+2. Intestazione (header):
+
+Aggiunge uno sfondo verde scuro.
+
+Colora il testo in bianco.
+
+Aggiunge spaziatura interna al titolo.
+
+
+
+3. Pulsante (button):
+
+Colora il pulsante di verde scuro.
+
+Rende il testo bianco e rimuove il bordo.
+
+Aggiunge un effetto "cliccabile" con il cursor: pointer.
+
+
+
+
+
+---
+
+JavaScript (Interattività della pagina)
+
+Il JavaScript rende la pagina dinamica, rispondendo alle azioni dell’utente.
+
+Cosa fa il JavaScript:
+
+1. Seleziona l’elemento del pulsante HTML usando document.querySelector("button").
+
+const button = document.querySelector("button");
+
+
+2. Assegna un gestore eventi al pulsante:
+
+Quando l’utente clicca sul pulsante, viene eseguita una funzione.
+
+
+button.addEventListener("click", function() {
+    const nome = document.getElementById("nome").value;
+    alert("Ciao, " + nome + "!");
+});
+
+
+3. All’interno della funzione:
+
+Legge il valore inserito dall’utente nel campo di testo (<input id="nome">) usando document.getElementById("nome").value.
+
+Mostra un messaggio di saluto con un'alert box personalizzata che include il nome dell'utente.
+
+
+
+
+
+---
+
+Esecuzione del codice
+
+1. La pagina mostra un titolo e un modulo con un campo di testo e un pulsante.
+
+
+2. L’utente inserisce il proprio nome nel campo di testo.
+
+
+3. Quando l’utente clicca sul pulsante "Saluta":
+
+JavaScript legge il nome dall’input.
+
+Mostra un messaggio di benvenuto personalizzato, ad esempio:
+
+Ciao, Mario!
+
+
+
+
+
+---
+
+Sintesi del comportamento del codice
+
+L’HTML fornisce la struttura della pagina.
+
+Il CSS definisce lo stile visivo (colori, layout).
+
+Il JavaScript aggiunge l’interattività, trasformando la pagina in un’applicazione dinamica e coinvolgente.
+
+
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esempio Completo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #00796b;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+        }
+        button {
+            padding: 10px;
+            background-color: #00796b;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="titolo">Benvenuto</h1>
+    </header>
+    <main>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome">
+            <button type="button">Saluta</button>
+        </form>
+    </main>
+    <script>
+        document.querySelector("button").addEventListener("click", function() {
+            const nome = document.getElementById("nome").value;
+            alert("Ciao, " + nome + "!");
+        });
+    </script>
+</body>
+</html>
